@@ -56,9 +56,17 @@ class GingerComponent extends HTMLElement {
         }
     }
 
+    disconnectedCallback(){
+        this.unbindEvents();
+    }
+
     //--------------------OVERRIDE FUNCTIONS--------------------------
 
     bindEvents() {
+        
+    }
+
+    unbindEvents() {
         
     }
 

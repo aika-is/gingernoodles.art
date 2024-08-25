@@ -15,9 +15,12 @@
         </style>
     </head>
     <body>
-        Come on
-        <ginger-mobile-header></ginger-mobile-header>
-        <ginger-desktop-header></ginger-desktop-header>
-        <div>Fuera</div>
+        <captain-logform></captain-logform>
+        <captain-loglist binding="logsList"></captain-loglist>
     </body>
+
+    <script type="module">
+        import EventDispatcher from './core/EventDispatcher.js';
+        EventDispatcher.getInstance().dispatchEvent(null,"startApplication",{});
+    </script>
 </html>

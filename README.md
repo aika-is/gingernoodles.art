@@ -1,6 +1,5 @@
 # Setup
-- Install http-server
-`npm install http-server -g`
+- Install http-server: `npm install http-server -g`
 
 # Startup
-`http-server -c-1`
+- `http-server -c-1`
