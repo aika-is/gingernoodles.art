@@ -1,8 +1,6 @@
-import DesktopHeader from '../components/DesktopHeader.js';
 import LogForm from '../components/logform/LogForm.js';
 import SuggestedTags from '../components/logform/SuggestedTags.js';
 import LogList from '../components/loglist/LogList.js';
-import MobileHeader from '../components/MobileHeader.js';
 import DataStore from '../core/DataStore.js';
 import EventDispatcher from '../core/EventDispatcher.js';
 import LogsModel from '../model/LogsModel.js';
@@ -24,4 +22,4 @@ EventDispatcher.getInstance().addEventListener(null,"textChange",(payload) => {
     DataStore.getInstance().setStore("suggestedTags", tags);
 });
 
-export default {DesktopHeader, MobileHeader, LogList, LogForm, SuggestedTags};
+export default {LogList, LogForm, SuggestedTags};
